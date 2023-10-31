@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <!--  Bootstrap Dependencies-->
     <meta charset="utf-8">
@@ -16,9 +16,23 @@
     <title>Accidents</title>
 </head>
 <body>
-<div class="container-fluid p-0">
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="/">Job4jAccidents</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-item nav-link active" href="/">Main</a>
+                    <span class="navbar-text">
+                        <div th:text="${user}"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container mt-2">
         <h3>Project "Accidents" creating as part of the Job4j course</h3>
+        <div th:text="${user}"></div>
     </div>
 </div>
 
