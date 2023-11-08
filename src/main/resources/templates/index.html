@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <!--  Bootstrap Dependencies-->
     <meta charset="utf-8">
@@ -23,6 +23,8 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav me-auto">
                     <a class="nav-item nav-link active" href="/">Main</a>
+                    <a class="nav-item nav-link" th:href="@{/accidents}">Accidents</a>
+                    <a class="nav-item nav-link active" th:href="@{/accidents/createAccident}">Add accident</a>
                     <span class="navbar-text">
                         <div th:text="${user}"></div>
                     </span>
@@ -53,6 +55,7 @@
                 </tr>
                 </tbody>
             </table>
+            <a class="btn btn-primary mt-3" href="/accidents/createAccident" role="button">Add accident</a>
         </div>
     </div>
 </div>

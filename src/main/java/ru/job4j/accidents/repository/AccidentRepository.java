@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface AccidentRepository {
     Accident save(Accident accident);
 
+    boolean edit(Accident accident);
+
     Optional<Accident> findById(int id);
 
     Collection<Accident> findAll();
